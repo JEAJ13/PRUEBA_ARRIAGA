@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+	<title>ejemplo basico css</title>
+	
+	<link href="CSS/style.css" rel= "stylesheet" type= "text/css"/>
+	<script type="text/javascript">
+		function mostrar1(){
+			document.getElementById("contenedor1").style.display='none';
+			document.getElementById("contenedor2").style.visibility="visible";
+			}
+		function mostrar2 (){
+			document.getElementById("contenedor1").style.display='block';
+			document.getElementById("contenedor2").style.visibility="hidden";
+		}
+
+	</script>
+
+</head>
+<body>
+	<div id="header"></div> 
+	<div id="contenedor1" class="container" style="display:none;">
+		<span onclick="mostrar1()">
+		<center>
+		<FORM action="" method="">
+    
+    <br><br><br><LABEL for="USUARIO">USUARIO: </LABEL>       <INPUT type="text" id="usuario"><BR>
+    <br><LABEL for="PASSWORD">PASSWORD: </LABEL>     <INPUT type="text" id="PASSWORD"><BR>
+	
+   
+   <br> <INPUT type="submit" value="Enviar"> &nbsp <button>cerrar</button>
+    </P>
+ </FORM>
+				
+			</center>
+<p>
+<p>
+		</span>
+	</div>
+	<div id="contenedor2" class="container">
+		<span onclick="mostrar2()">
+			<BR>
+			<BR>
+			<center><button>iniciar sesion</button></center>
+			</span>
+			</div>
+			<div></div>
+</body>
+</html>
